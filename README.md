@@ -2,7 +2,7 @@
 Repo ini memuat pekerjaan dan praktikum mata kuliah Pengembangan Aplikasi Berbasis Web dengan satu folder untuk setiap pertemuan.
  
 ## Pertemuan 3 — Halaman profil saya
-Topik halaman saya: koleksi buku di rak saya.
+Topik halaman saya: Koleksi buku di rak saya.
 - Judul halaman: My Book Collection
 - Deskripsi: Halaman yang  berisi daftar koleksi buku beresta informasi terkait buku dan status baca
 - Tautan navigasi: Home, Collection, New Book
