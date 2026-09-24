@@ -16,4 +16,4 @@ Dalam Pertemuan 3, saya menggunakan AI sebagai alat bantu:
 - Memahami struktur, instruksi, dan konsep tugas
 - Mengetahui letak error ketika mempersiapkan repository
 - Untuk bagian figure saya menggunakan bantuan AI untuk mencari cara mengetahui cara mengubah foto ke JPG mnejadi Webp. 
-
+Seluruh topik, isi, dan pengerjaan tugas merupakan hasil kerja saya sendiri.
