@@ -12,5 +12,8 @@ Topik halaman saya: Koleksi buku di rak saya.
 - Gambar: koleksi-buku.webp (perubahan menjadi rak-koleksi-saya.webp)
  
 ## Catatan penggunaan AI
-Untuk bagian figure saya menggunakan bantuan AI untuk mencari cara mengetahui cara mengubah foto ke JPG mnejadi Webp. 
+Dalam Pertemuan 3, saya menggunakan AI sebagai alat bantu:
+- Memahami struktur, instruksi, dan konsep tugas
+- Mengetahui letak error ketika mempersiapkan repository
+- Untuk bagian figure saya menggunakan bantuan AI untuk mencari cara mengetahui cara mengubah foto ke JPG mnejadi Webp. 
 
