@@ -7,12 +7,10 @@ Topik halaman saya: Koleksi buku di rak saya.
 - Deskripsi: Halaman yang  berisi daftar koleksi buku beresta informasi terkait buku dan status baca
 - Tautan navigasi: Home, Collection, New Book
 - Dua bagian utama: Collection, New Book
-- Kolom tabel: Judul, Penulis, Tahun Terbit, Jumlah Halaman, Genre
-- Kolom form: Judul, Penulis, Status Baca, Review
-- Gambar: koleksi-buku.webp
+- Kolom tabel: Judul, Penulis, Tahun Terbit, Jumlah Halaman, Genre (Tambahan Review)
+- Kolom form: Judul, Penulis, Status Baca (Tambahan Tahun Terbit, Jumlah Halaman dan Genre)
+- Gambar: koleksi-buku.webp (perubahan menjadi rak-koleksi-saya.webp)
  
 ## Catatan penggunaan AI
- 
-Tulis bagian mana yang dibantu AI dan bagian mana yang Anda
-kerjakan sendiri, atau tulis: tidak memakai AI.
+Untuk bagian figure saya menggunakan bantuan AI untuk mencari cara mengetahui cara mengubah foto ke JPG mnejadi Webp. 
 
