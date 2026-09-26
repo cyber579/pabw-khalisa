@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Book Collection</title>
+</head>
+
+
+<body>
+  <header>
+    <h1>My Book Collection</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#saya">Home</a></li>
+        <li><a href="#koleksi">Collection</a></li>
+        <li><a href="#tambah">New Book</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="koleksi">
+      <h2>Collection</h2>
+      <table>
+            <caption>My Book Collection</caption>
+        <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+              <th scope="col">Year</th>
+              <th scope="col">Pages</th>
+              <th scope="col">Genre</th>
+              <th scope="col">Review</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <th scope="row">Di Tanah Lada</th>
+              <td>Ziggy Zezsyazeoviennazabrizikie</td>
+              <td>2024</td>
+              <td>230</td>
+              <td>Slice Of Life</td>
+              <td>10/10 New POV dari anak kecil berusia 6 tahun</td>
+            </tr>
+            <tr>
+              <th scope="row">The Dragon Republic</th>
+              <td>R.F. Kuang</td>
+              <td>2019</td>
+              <td>656</td>
+              <td>Fantasy</td>
+              <td>9/10 Memberikan nilai kecil karena membuatku sesak napas ditengah malam</td>
+            </tr>
+            <tr>
+              <th scope="row">Halte Alam Baka</th>
+              <td>Kai Elian</td>
+              <td>2025</td>
+              <td>280</td>
+              <td>Slice Of Life</td>
+              <td>8/10 Masih ada plot hole</td>
+            </tr>
+            <tr>
+              <th scope="row">Aldebaran</th>
+              <td>Tere Liye</td>
+              <td>2024</td>
+              <td>268</td>
+              <td>Fantasy</td>
+              <td>9/10 I LOVE MATA!</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <figure>
+        <img src="rak-koleksi-saya.webp" 
+             alt="Gambar rak buku di kamar, berisikan koleksi buku yang disusun rapi"
+             width="550" height="460" loading="lazy">
+        <figcaption>Koleksi Buku Saya</figcaption>
+      </figure>
+    </section>
+ 
+    <section id="tambah">
+      <h2>New Book</h2>
+     <form action="/simpan" method="post">
+         <p>
+            <label for="judul">Book Title</label>
+            <input type="text" id="judul" name="judul" required>
+        </p>
+        <p>
+            <label for="penulis">Author</label>
+            <input type="text" id="penulis" name="penulis" required>
+        </p>
+        <p>
+            <label for="tahun">Year</label>
+            <input type="number" id="tahun" name="tahun" min="1500" max="3000">
+        </p>
+        <p>
+            <label for="halaman">Pages</label>
+            <input type="number" id="halaman" name="halaman" required>
+        </p>
+        <p>
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" name="genre" required>
+        </p>
+        <p>
+            <label for="status">Reading Status</label>
+            <input type="text" id="status" name="status" required>
+        </p>
+      <button type="submit">Save</button>
+     </form>
+    </section>
+</main>
+ 
+  <footer id="saya">
+    <p>Khalisa Zahra Yulismar · 25523067 · 2026</p>
+  </footer>
+</body>
+</html>
