@@ -43,4 +43,6 @@ Token yang sudah ditetapkan:
 
 Kriteria selesai: Dengan mengubah --color-primary di satu baris program, perubahan ini harus mengubah warna tombol, tautan, judul, dan garis fokus.
 
+## Catatan penggunaan AI
+Dalam pertemuan 4, saya memang sedikit lebih banyak menggunakan AI dibandingkan pertemuan sebelumnya. Hal ini dikarenakan saya mengalami kesulitan saat mengubah warna tema dalam halaman profil.Saya juga menggunakan AI untuk bagian .katalog dan .kartu.
 
