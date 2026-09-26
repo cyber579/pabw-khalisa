@@ -36,7 +36,7 @@ Token yang sudah ditetapkan:
 | --color-surface | #FFFFFF | Latar kartu/panel |
 | --color-border | #191970 | Border/pemisah |
 | --color-primary | #006666 | Tombol, tautan, penanda |
-| --color-danger | #B00020 | Peringatan dan error |
+| --color-danger | #b00078 | Peringatan dan error |
 | --color-focus | #0057B8 | Fokus keyboard |
 | --radius-md | 0.5rem | Sudut tombol dan kartu
 | --space-4 | 1rem | Jarak standar antar elemen
