@@ -1,9 +1,9 @@
 /* Lapisan Pertama */
 :root {
-  --blue-700: #006666;
+  --blue-700: #066666;
   --blue-500: #0057B8;
   --blue-50: #F0F8FF;
-  --navy-700: #1E293B;
+  --navy-700: #191970;
   --gray-900: #404040;
   --white: #FFFFFF;
   --red-500: #b00078;
@@ -34,4 +34,6 @@
   --color-danger: var(--red-500);
   --color-focus: var(--blue-700);
   --color-border: var(--navy-700);
+  --card-pad: var(--space-4);
+  --section-gap: var(--space-6);
 }
