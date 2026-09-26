@@ -35,7 +35,7 @@ button :hover {
 }
 
 :focus-visible {
-  --color-focus: var(--blue-700);
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
  
