@@ -31,11 +31,11 @@ button {
 }
 
 button :hover {
-    background: var(--color-focus);
+  background: var(--color-focus);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-focus);
+  --color-focus: var(--blue-700);
   outline-offset: 2px;
 }
  

@@ -19,7 +19,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--color-primary);
+  color: var(--color-primary-text, var(--color-primary));
   text-decoration: none;
 }
 

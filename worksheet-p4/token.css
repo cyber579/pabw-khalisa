@@ -1,9 +1,9 @@
-/*Lapisan Pertama*/
+/* Lapisan Pertama */
 :root {
   --blue-700: #006666;
   --blue-500: #0057B8;
   --blue-50: #F0F8FF;
-
+  --navy-700: #1E293B;
   --gray-900: #404040;
   --white: #FFFFFF;
   --red-500: #b00078;
@@ -25,12 +25,13 @@
   --text-3xl: 2.25rem;
 }
 
-/*Lapisan Kedua*/
+/* Lapisan Kedua */
 :root {
   --color-bg: var(--blue-50);
   --color-fg: var(--gray-900);
   --color-surface: var(--white);
   --color-primary: var(--blue-700);
   --color-danger: var(--red-500);
-  --color-focus: var(--blue-500);
+  --color-focus: var(--blue-700);
+  --color-border: var(--navy-700);
 }
