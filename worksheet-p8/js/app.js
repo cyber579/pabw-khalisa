@@ -41,3 +41,57 @@ const formatKeahlian = (daftar) => daftar.join(" · ");
 
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
+
+
+const daftarProyek = [
+  {
+    Judul: "Halaman Profil",
+    Tahun: 2026,
+    Status: true
+  },
+  {
+    Judul: "Katalog Buku",
+    Tahun: 2026,
+    Status: false
+  },
+  {
+    Judul: "Mindora",
+    Tahun: 2026,
+    Status: false
+  }
+];
+
+console.table(daftarProyek);
+
+
+const judulProyek = daftarProyek.map(
+  (proyek) => proyek.Judul
+);
+
+console.log("Semua judul proyek:");
+console.table(judulProyek);
+
+const proyekSelesai = daftarProyek.filter(
+  (proyek) => proyek.Status
+);
+
+console.log("Proyek yang selesai:");
+console.table(proyekSelesai);
+
+const proyekProfil = daftarProyek.find(
+  (proyek) => proyek.Judul === "Halaman Profil"
+);
+
+console.log("Proyek profil:");
+console.log(proyekProfil);
+
+
+const proyekTerurut = [...daftarProyek].sort(
+  (a, b) => a.Judul.localeCompare(b.Judul)
+);
+
+console.log("Array asli:");
+console.table(daftarProyek);
+
+console.log("Array setelah diurutkan:");
+console.table(proyekTerurut);
