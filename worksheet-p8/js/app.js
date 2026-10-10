@@ -2,6 +2,7 @@ const profil = {
   nama: "Khalisa Zahra Yulismar",
   peran: "Mahasiswa Informatika",
   minat: "Membaca dan mengoleksi buku",
+  keahlian: ["Menulis", "Sketch", "Average Coding"],
   koleksiBuku: [
     "Novel Fantasy",
     "Novel Mystery",
@@ -31,3 +32,12 @@ console.log(profil.alamat?.kota);
 
 console.log(4 == "4");
 console.log(4 === "4");
+
+function buatPerkenalan({ nama, peran }) {
+  return `${nama} — ${peran}`;
+}
+
+const formatKeahlian = (daftar) => daftar.join(" · ");
+
+console.log(buatPerkenalan(profil));
+console.log(formatKeahlian(profil.keahlian));
