@@ -1,0 +1,83 @@
+.page {
+  min-height: 100dvh;
+}
+
+/* Area utama: satu kolom di layar sempit */
+main.isi {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "sisi"
+    "konten";
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+/* Sidebar dan konten tidak boleh meluber */
+.sisi,
+.konten,
+.utama,
+.bawah {
+  min-width: 0;
+}
+
+/* Konten Collection dan New Book tersusun vertikal */
+.konten {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Galeri: satu kolom pada layar sempit */
+.katalog {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+/* Teks panjang tidak memaksa kolom melebar */
+.kartu,
+.kartu h3,
+.kartu p {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Gambar tidak melebihi wadahnya */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tabel lebar dapat digulir sendiri */
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Teks mengikuti ukuran huruf pengguna */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* C.1 — Tablet: galeri dua kolom */
+@media (min-width: 48rem) {
+  .katalog {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* C.1 — Desktop: sidebar di samping konten */
+@media (min-width: 60rem) {
+  main.isi {
+    grid-template-columns: 16rem minmax(0, 1fr);
+    grid-template-areas: "sisi konten";
+  }
+
+  .katalog {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

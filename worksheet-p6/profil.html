@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Book Collection</title>
+
+  <link rel="stylesheet" href="token.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Tema gelap</label>
+
+      <div class="header-baris">
+        <h1>My Book Collection</h1>
+
+        <nav class="navbar" aria-label="Navigasi utama">
+          <ul>
+            <li><a href="#saya">Home</a></li>
+            <li><a href="#koleksi">Collection</a></li>
+            <li><a href="#tambah">New Book</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="isi">
+
+      <aside class="sisi">
+        <h2>My Library</h2>
+        <p>Welcome to my personal book collection!</p>
+        <p>Explore my books, reviews, and reading list.</p>
+      </aside>
+
+      <div class="konten">
+        <section id="koleksi" class="utama">
+          <h2>Collection</h2>
+
+          <div class="katalog">
+
+            <article class="kartu">
+              <h3>Di Tanah Lada</h3>
+              <p><strong>Author:</strong> Ziggy Zezsyazeoviennazabrizikie</p>
+              <p><strong>Year:</strong> 2024</p>
+              <p><strong>Pages:</strong> 230</p>
+              <p><strong>Genre:</strong> Slice Of Life</p>
+              <p><strong>Review:</strong> 10/10 New POV dari anak kecil berusia 6 tahun</p>
+            </article>
+
+            <article class="kartu">
+              <h3>The Dragon Republic</h3>
+              <p><strong>Author:</strong> R.F. Kuang</p>
+              <p><strong>Year:</strong> 2019</p>
+              <p><strong>Pages:</strong> 656</p>
+              <p><strong>Genre:</strong> Fantasy</p>
+              <p><strong>Review:</strong> 9/10 Memberikan nilai kecil karena membuatku sesak napas ditengah malam</p>
+            </article>
+
+            <article class="kartu">
+              <h3>Halte Alam Baka</h3>
+              <p><strong>Author:</strong> Kai Elian</p>
+              <p><strong>Year:</strong> 2025</p>
+              <p><strong>Pages:</strong> 280</p>
+              <p><strong>Genre:</strong> Slice Of Life</p>
+              <p><strong>Review:</strong> 8/10 Masih ada plot hole</p>
+            </article>
+
+            <article class="kartu">
+              <h3>Aldebaran</h3>
+              <p><strong>Author:</strong> Tere Liye</p>
+              <p><strong>Year:</strong> 2024</p>
+              <p><strong>Pages:</strong> 268</p>
+              <p><strong>Genre:</strong> Fantasy</p>
+              <p><strong>Review:</strong> 9/10 I LOVE MATA!</p>
+            </article>
+
+          </div>
+
+          <figure>
+            <img
+              src="rak-koleksi-saya.webp"
+              alt="Gambar rak buku di kamar, berisikan koleksi buku yang disusun rapi"
+              width="550"
+              height="400"
+              loading="lazy">
+            <figcaption>Koleksi Buku Saya</figcaption>
+          </figure>
+        </section>
+
+        <section id="tambah" class="bawah">
+          <h2>New Book</h2>
+
+          <form action="/simpan" method="post">
+
+            <p>
+              <label for="judul">Book Title</label>
+              <input type="text" id="judul" name="judul" required>
+            </p>
+
+            <p>
+              <label for="penulis">Author</label>
+              <input type="text" id="penulis" name="penulis" required>
+            </p>
+
+            <p>
+              <label for="tahun">Year</label>
+              <input type="number" id="tahun" name="tahun" min="1500" max="3000">
+            </p>
+
+            <p>
+              <label for="halaman">Pages</label>
+              <input type="number" id="halaman" name="halaman" required>
+            </p>
+
+            <p>
+              <label for="genre">Genre</label>
+              <input type="text" id="genre" name="genre" required>
+            </p>
+
+            <p>
+              <label for="status">Reading Status</label>
+              <input type="text" id="status" name="status" required>
+            </p>
+
+            <button type="submit">Save</button>
+          </form>
+        </section>
+
+      </div>
+    </main>
+
+    <footer id="saya">
+      <p>Khalisa Zahra Yulismar · 25523067 · 2026</p>
+    </footer>
+
+  </div>
+</body>
+</html>
