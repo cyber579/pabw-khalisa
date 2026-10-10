@@ -1,3 +1,5 @@
+
+/* Formulir */
 .form-kolom {
   display: flex;
   flex-direction: column;
@@ -10,7 +12,9 @@ label {
   font-weight: 600;
 }
 
-input,select, textarea {
+input,
+select,
+textarea {
   font: inherit;
   padding: var(--space-2) var(--space-3);
   border: 1px solid var(--color-border);
@@ -18,6 +22,7 @@ input,select, textarea {
   background: var(--color-surface);
   color: var(--color-fg);
   width: 100%;
+  min-width: 0;
 }
 
 button {
@@ -30,16 +35,52 @@ button {
   cursor: pointer;
 }
 
-button :hover {
+/* Perbaikan: gunakan :hover, bukan spasi sebelum :hover */
+button:hover {
   background: var(--color-focus);
 }
 
+/* Fokus keyboard */
 :focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
- 
+
+/* Validasi input */
 input:user-invalid {
   border-color: var(--color-danger);
   border-width: 2px;
 }
+
+/* Kartu buku */
+.kartu {
+  min-width: 0;
+}
+
+.kartu h3,
+.kartu p {
+  overflow-wrap: anywhere;
+}
+
+/* Bagian bawah kartu jika digunakan */
+.kartu__kaki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+
+/* Gambar koleksi */
+figure {
+  margin-top: var(--space-4);
+  max-width: 100%;
+}
+
+figure img {
+  width: min(100%, 34rem);
+  height: auto;
+  border-radius: var(--radius-md);
+}
+

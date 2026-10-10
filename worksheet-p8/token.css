@@ -34,6 +34,7 @@
   --color-danger: var(--red-500);
   --color-focus: var(--blue-700);
   --color-border: var(--navy-700);
+  --color-primary-text: var(--color-primary);
   --card-pad: var(--space-4);
   --section-gap: var(--space-6);
 }

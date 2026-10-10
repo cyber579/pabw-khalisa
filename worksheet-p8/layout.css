@@ -1,3 +1,12 @@
+
+/* B.1 — Kerangka halaman */
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+/* Header */
 header {
   padding-block: var(--space-4);
   border-bottom: 1px solid var(--color-border);
@@ -11,38 +20,77 @@ header {
   flex-wrap: wrap;
 }
 
-nav ul {
+.header-baris h1 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Navbar */
+.navbar ul {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: var(--space-4);
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-nav a {
+.navbar a {
   color: var(--color-primary-text, var(--color-primary));
   text-decoration: none;
 }
 
-nav a:hover {
+.navbar a:hover {
   text-decoration: underline;
 }
 
-main {
+/* B.2 — Sidebar dan konten utama */
+main.isi {
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 1fr);
+  grid-template-areas: "sisi konten";
+  align-items: start;
+  gap: var(--section-gap);
+  padding-block: var(--space-6);
+  min-width: 0;
+}
+
+.sisi {
+  grid-area: sisi;
+  min-width: 0;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.konten {
+  grid-area: konten;
   display: flex;
   flex-direction: column;
   gap: var(--section-gap);
-  padding-block: var(--space-6);
+  min-width: 0;
 }
 
+.utama,
+.bawah {
+  min-width: 0;
+}
+
+/* C.1 — Galeri adaptif */
 .katalog {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
   gap: var(--space-4);
 }
 
-
+/* Kartu buku */
 .kartu {
-  flex: 1 1 16rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -50,8 +98,25 @@ main {
   padding: var(--card-pad);
 }
 
+.kartu h3,
+.kartu p {
+  overflow-wrap: anywhere;
+}
+
+/* Gambar koleksi */
+figure {
+  margin-top: var(--space-4);
+  max-width: 100%;
+}
+
+figure img {
+  width: min(100%, 34rem);
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+/* Footer */
 footer {
-  margin-top: var(--space-6);
   padding-block: var(--space-4);
   border-top: 1px solid var(--color-border);
   color: var(--color-fg);
