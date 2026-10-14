@@ -47,17 +47,20 @@ export const daftarProyek = [
   {
     Judul: "Halaman Profil",
     Tahun: 2026,
-    Status: true
+    Status: true,
+    category: "web"
   },
   {
     Judul: "Katalog Buku",
     Tahun: 2026,
-    Status: false
+    Status: false,
+    category: "web"
   },
   {
     Judul: "Mindora",
     Tahun: 2026,
-    Status: false
+    Status: false,
+    category: "aplikasi"
   }
 ];
 
