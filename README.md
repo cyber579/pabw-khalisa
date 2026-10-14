@@ -51,3 +51,9 @@ Materi yang dipelajari meliputi penggunaan const dan let, template literal, oper
 
 ## Catatan Penggunaan AI
 Saya menggunakan ChatGPT sebagai pendamping belajar untuk memahami konsep JavaScript, mengetahui penyebab kesalahan pada kode, dan memperoleh saran perbaikan. Saya menjalankan kode melalui Visual Studio Code dan browser, memeriksa hasilnya di Console, serta melakukan penyesuaian terhadap kode proyek saya sendiri. Bantuan AI digunakan untuk penjelasan konsep dan arahan debugging, sedangkan pengujian, pemeriksaan hasil, dan penyesuaian kode saya lakukan sendiri.
+
+## Pertemuan 9 - DOM, Events dan Interactivity
+Pada pertemuan ini, saya mengembangkan halaman My Book Collection dengan JavaScript DOM untuk memilih elemen, menampilkan data dari array, memfilter kategori, dan memvalidasi formulir. Hal ini dilakukan dengan melakukan penerapan, pengujian dan penyesuaian kode pada proyek sendiri serta memeriksa hasilnya melalui browser dan Develoger Tools.
+
+## Catatan Penggunaan AI
+AI digunakan sebagai pendamping untuk menjelaskan konsep DOM, membantu meninjau kode, memberikan saran debugging, dan membantu memahami validasi formulir.
