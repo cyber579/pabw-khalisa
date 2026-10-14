@@ -73,3 +73,88 @@ filterRow.addEventListener("click", (event) => {
 });
 
 render(daftarProyek);
+
+// Sheet D 
+const errorElements = {
+  judul: document.querySelector("#judul-error"),
+  penulis: document.querySelector("#penulis-error"),
+  tahun: document.querySelector("#tahun-error"),
+  halaman: document.querySelector("#halaman-error"),
+  genre: document.querySelector("#genre-error"),
+  status: document.querySelector("#status-error"),
+};
+
+const fields = {
+  judul: judulInput,
+  penulis: penulisInput,
+  tahun: tahunInput,
+  halaman: halamanInput,
+  genre: genreInput,
+  status: statusInput,
+};
+
+function validateField(name) {
+  const field = fields[name];
+  const error = errorElements[name];
+  const value = field.value.trim();
+
+  let message = "";
+
+  if (!value) {
+    message = "Field ini wajib diisi.";
+  } else if (name === "halaman" &&
+             (!Number.isInteger(Number(value)) ||
+              Number(value) <= 0)) {
+    message = "Halaman harus berupa bilangan bulat positif.";
+  } else if (name === "tahun" &&
+             (!Number.isInteger(Number(value)) ||
+              Number(value) < 1500 ||
+              Number(value) > new Date().getFullYear())) {
+    message = "Masukkan tahun yang valid.";
+  }
+
+  error.textContent = message;
+
+  if (message) {
+    field.setAttribute("aria-invalid", "true");
+  } else {
+    field.removeAttribute("aria-invalid");
+  }
+
+  return message === "";
+}
+
+function validateForm() {
+  return Object.keys(fields).every(validateField);
+}
+
+const submitButton = form.querySelector('[type="submit"]');
+
+function updateSubmitButton() {
+  submitButton.disabled = !validateForm();
+}
+
+Object.keys(fields).forEach((name) => {
+  fields[name].addEventListener("input", updateSubmitButton);
+  fields[name].addEventListener("change", updateSubmitButton);
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  if (!validateForm()) {
+    const firstInvalid = Object.keys(fields).find(
+      (name) => !validateField(name)
+    );
+
+    if (firstInvalid) {
+      fields[firstInvalid].focus();
+    }
+
+    return;
+  }
+
+  alert("Validasi berhasil!");
+});
+
+updateSubmitButton();

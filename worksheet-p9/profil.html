@@ -67,31 +67,36 @@
         <section id="tambah" class="bawah">
           <h2>New Book</h2>
 
-          <form action="/simpan" method="post">
+          <form action="/simpan" method="post" novalidate>
 
             <p>
               <label for="judul">Book Title</label>
               <input type="text" id="judul" name="judul" required>
+              <small class="error" id="judul-error"></small>
             </p>
 
             <p>
               <label for="penulis">Author</label>
               <input type="text" id="penulis" name="penulis" required>
+              <small class="error" id="penulis-error"></small>
             </p>
 
             <p>
               <label for="tahun">Year</label>
               <input type="number" id="tahun" name="tahun" min="1500" max="3000">
+              <small class="error" id="tahun-error"></small>
             </p>
 
             <p>
               <label for="halaman">Pages</label>
               <input type="number" id="halaman" name="halaman" required>
+              <small class="error" id="halaman-error"></small>
             </p>
 
             <p>
               <label for="genre">Genre</label>
               <input type="text" id="genre" name="genre" required>
+              <small class="error" id="genre-error"></small>
             </p>
 
             <p>
