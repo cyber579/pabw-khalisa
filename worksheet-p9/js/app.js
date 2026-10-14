@@ -43,7 +43,7 @@ console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
 
 
-const daftarProyek = [
+export const daftarProyek = [
   {
     Judul: "Halaman Profil",
     Tahun: 2026,
