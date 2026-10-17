@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0F172A;
+    --color-fg: #E2E8F0;
+    --color-surface: #1E293B;
+    --color-border: #64748B;
+    --color-primary: #7DA9F7;
+    --color-danger: #FF8A8A;
+    --color-focus: #ffb700;
+  }
+}
+
+.pengalih-tema {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+:root:has(#tema:checked) {
+  --color-bg: #0F172A;
+  --color-fg: #E2E8F0;
+  --color-surface: #1E293B;
+  --color-border: #64748B;
+  --color-primary: #7DA9F7;
+  --color-danger: #FF8A8A;
+  --color-focus: #ffb700;
+}

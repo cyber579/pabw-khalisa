@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Book Collection</title>
+
+  <link rel="stylesheet" href="token.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Tema gelap</label>
+
+      <div class="header-baris">
+        <h1>My Book Collection</h1>
+
+        <nav class="navbar" aria-label="Navigasi utama">
+          <ul>
+            <li><a href="#saya">Home</a></li>
+            <li><a href="#koleksi">Collection</a></li>
+            <li><a href="#tambah">New Book</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="isi">
+
+      <aside class="sisi">
+        <h2>My Library</h2>
+        <p>Welcome to my personal book collection!</p>
+        <p>Explore my books, reviews, and reading list.</p>
+      </aside>
+
+      <div class="konten">
+        <section id="koleksi" class="utama">
+          <h2>Collection</h2>
+
+          <div id="filter" class="filter">
+            <button type="button" data-category="all" class="active">Semua</button>
+            <button type="button" data-category="web">Web</button>
+            <button type="button" data-category="aplikasi">Aplikasi</button>
+          </div>
+          
+          <div class="katalog"></div>
+          <p id="empty" hidden>Tidak ada proyek dalam kategori ini.</p>
+
+          <figure>
+            <img
+              src="rak-koleksi-saya.webp"
+              alt="Gambar rak buku di kamar, berisikan koleksi buku yang disusun rapi"
+              width="550"
+              height="400"
+              loading="lazy">
+            <figcaption>Koleksi Buku Saya</figcaption>
+          </figure>
+        </section>
+
+        <section id="tambah" class="bawah">
+          <h2>New Book</h2>
+
+          <form action="/simpan" method="post" novalidate>
+
+            <p>
+              <label for="judul">Book Title</label>
+              <input type="text" id="judul" name="judul" required>
+              <small class="error" id="judul-error"></small>
+            </p>
+
+            <p>
+              <label for="penulis">Author</label>
+              <input type="text" id="penulis" name="penulis" required>
+              <small class="error" id="penulis-error"></small>
+            </p>
+
+            <p>
+              <label for="tahun">Year</label>
+              <input type="number" id="tahun" name="tahun" min="1500" max="3000">
+              <small class="error" id="tahun-error"></small>
+            </p>
+
+            <p>
+              <label for="halaman">Pages</label>
+              <input type="number" id="halaman" name="halaman" required>
+              <small class="error" id="halaman-error"></small>
+            </p>
+
+            <p>
+              <label for="genre">Genre</label>
+              <input type="text" id="genre" name="genre" required>
+              <small class="error" id="genre-error"></small>
+            </p>
+
+            <p>
+              <label for="status">Reading Status</label>
+              <input type="text" id="status" name="status" required>
+            </p>
+
+            <button type="submit">Save</button>
+          </form>
+        </section>
+
+      </div>
+    </main>
+
+    <footer id="saya">
+      <p>Khalisa Zahra Yulismar · 25523067 · 2026</p>
+    </footer>
+
+  </div>
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/dom.js"></script>
+  <script type="module" src="js/api.js"></script>
+</body>
+</html>
