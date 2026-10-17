@@ -57,3 +57,9 @@ Pada pertemuan ini, saya mengembangkan halaman My Book Collection dengan JavaScr
 
 ## Catatan Penggunaan AI
 AI digunakan sebagai pendamping untuk menjelaskan konsep DOM, membantu meninjau kode, memberikan saran debugging, dan membantu memahami validasi formulir.
+
+## Pertemuan 10 - JS Async dan JSON
+Pada pertemuan ini, saya mengembangkan halaman dengan mengintegrasikan API publik untuk mengambil dan menampilkan data postingan secara dinamis. Menerapkan konsep asynchronous JavaScript, seperti fetch(), Promise, async/await, dan pengolahan JSON. Selain itu, saya menangani empat kondisi antarmuka, yaitu loading, success, failure, dan empty, agar pengguna mendapatkan informasi yang jelas selama proses pengambilan data.
+
+## Catatan Penggunaan AI
+Saya menggunakan ChatGPT sebagai asisten AI untuk membantu memahami konsep JavaScript asynchronous, termasuk fetch(), Promise, async/await, pengolahan JSON, penanganan error, dan integrasi API.
