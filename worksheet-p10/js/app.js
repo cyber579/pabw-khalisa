@@ -1,3 +1,5 @@
+import { fetchNews } from './api.js';
+
 const profil = {
   nama: "Khalisa Zahra Yulismar",
   peran: "Mahasiswa Informatika",
@@ -98,3 +100,19 @@ console.table(daftarProyek);
 
 console.log("Array setelah diurutkan:");
 console.table(proyekTerurut);
+
+async function mulaiMuatData() {
+  const statusElement = document.querySelector('#api-status');
+
+  statusElement.textContent = 'Memuat data...';
+
+  try {
+    const data = await fetchNews();
+    statusElement.textContent = `Data berhasil dimuat: ${data.length} postingan.`;
+    console.log('Data API berhasil dimuat:', data);
+  } catch (error) {
+    statusElement.textContent = `Gagal memuat data: ${error.message}`;
+  }
+}
+
+mulaiMuatData();
